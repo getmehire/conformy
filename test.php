@@ -1,5 +1,7 @@
 <?php
-
+<header> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	</header>
 //Initializing variable
 $action = "";
 // This is somewhat of a validity checker.
@@ -14,7 +16,7 @@ $action = !empty($_POST['action']) ? $_POST['action'] : '';
 if ($action=="")    /* display the contact form */
     {
  ?>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+
 <div class="form-wrap">
     <form  action="" method="POST" enctype="multipart/form-data">
     <input type="hidden" name="action" value="submit">
